@@ -1,0 +1,32 @@
+﻿@model Ranta.LogMagic.Display.ViewModel.LogEvent
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<div class="panel @Model.LogTypeCss">
+    <div class="panel-heading">
+        @Model.Source
+    </div>
+    <div class="panel-body">
+        <blockquote>
+            @Model.Title
+        </blockquote>
+        <ul class="nav">
+            <li><a>级别 @Model.LogTypeText</a></li>
+            <li><a>应用程序编号 @Model.AppId</a></li>
+            <li><a>创建时间 @Model.CreateTime</a></li>
+        </ul>
+        <blockquote>
+            <ul class="nav">
+                @if (!string.IsNullOrEmpty(Model.Content))
+                {
+                    foreach (var item in Model.Content.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        <li>@item</li>
+                    }
+                }
+            </ul>
+        </blockquote>
+    </div>
+</div>

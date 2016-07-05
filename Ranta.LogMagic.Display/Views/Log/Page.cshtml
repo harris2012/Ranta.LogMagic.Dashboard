@@ -1,0 +1,41 @@
+﻿@model Ranta.Common.PagingModel<Ranta.LogMagic.Display.ViewModel.LogHeader>
+@{
+    ViewBag.Title = "Log List";
+}
+
+@if (Model != null)
+{
+    if (Model.Items != null && Model.Items.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>名称</th>
+                    <th>创建时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@Html.ActionLink(item.Title, "detail", "log", new { name = item.Guid }, null)</td>
+                        <td>@item.CreateTime</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div>暂无数据</div>
+    }
+
+    if (Model.PageCount > 0)
+    {
+        @Ranta.Web.Utility.PagingUtility.Paging(Model.PageCount, Model.PageIndex, Url, "log")
+    }
+}
+
+

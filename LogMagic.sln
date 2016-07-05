@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranta.LogMagic.Display", "Ranta.LogMagic.Display\Ranta.LogMagic.Display.csproj", "{88BFA832-30FD-43C6-8193-71638E36718A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranta.LogMagic.Display.Core", "Ranta.LogMagic.Display.Core\Ranta.LogMagic.Display.Core.csproj", "{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranta.LogMagic.Display.Dal", "Ranta.LogMagic.Display.Dal\Ranta.LogMagic.Display.Dal.csproj", "{09018FD4-D8E9-4D4A-B22A-108DC083A487}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Preview|Any CPU = Preview|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Preview|Any CPU.ActiveCfg = Preview|Any CPU
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Preview|Any CPU.Build.0 = Preview|Any CPU
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88BFA832-30FD-43C6-8193-71638E36718A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Preview|Any CPU.ActiveCfg = Preview|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Preview|Any CPU.Build.0 = Preview|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D07F06-6D4A-45A0-8A69-55FACB190C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Preview|Any CPU.ActiveCfg = Preview|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Preview|Any CPU.Build.0 = Preview|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09018FD4-D8E9-4D4A-B22A-108DC083A487}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
